@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PS3 | Tile Game</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"></link>
+	<script src="fifteengame.js"></script>
+	<script>
+		// ~ jquery's $(document).ready()
+		document.addEventListener("DOMContentLoaded", function() {
+			fifteen(document.getElementById("gameContainer"));
+		});
+		let newSetup = () => {
+			fifteen(document.getElementById("gameContainer"),
+				document.getElementById("rows").value,
+				document.getElementById("cols").value);
+		}
+	</script>
+</head>
+<body>
+	<div id="content">
+		<div id="gameContainer"></div>
+		<div id="newSetupDiv">
+			<input type="number" id="rows" value="4" />
+			<pre> X </pre>
+			<input type="number" id="cols" value="4" />
+			<button type="button" onclick="newSetup()">new board</button>
+		</div>
+	</div>
+</body>
+</html>

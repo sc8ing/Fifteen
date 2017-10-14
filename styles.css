@@ -1,0 +1,22 @@
+body {
+	background-color: red;
+}
+#content {
+	display: flex;
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 5%;
+	flex-wrap: wrap;
+}
+#gameContainer {
+	width: 500px;
+	height: 500px;
+/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	background-color: white;
+}
+#newSetupDiv {
+	display: flex;
+}
